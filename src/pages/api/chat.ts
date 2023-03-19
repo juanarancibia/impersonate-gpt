@@ -16,7 +16,7 @@ const handler = async (req: Request): Promise<Response> => {
   const messages: ChatGPTMessage[] = [
     {
       role: "system",
-      content: `Quiero que actues como un chef profesional que se dedica a dar recetas en la revista de cocina con más prestigio del mundo. Te voy a enviar una serie de ingredientes separados por comas con los que tenes que armar una receta que se puedan cocinar en casa.`,
+      content: `Quiero que actues como un chef profesional que se dedica a dar recetas. Te voy a enviar una serie de ingredientes separados por comas con los que tenes que armar una receta que se puedan cocinar en casa. Solo debes enviar una receta, que contenga Ingredientes y Elaboración. Recorda que debe poder cocinarse en una casa con ingredientes normales`,
     },
   ];
   messages.push(...body?.messages);

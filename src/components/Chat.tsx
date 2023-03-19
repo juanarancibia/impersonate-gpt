@@ -49,7 +49,7 @@ const Chat: React.FC<ChatProps> = () => {
   };
 
   return (
-    <div className="flex h-screen w-full flex-col items-center">
+    <div className="flex h-[95vh] w-full flex-col items-center">
       <Typography className="mt-4" color="white" variant="h4">
         Recetas-GPT
       </Typography>
@@ -59,14 +59,10 @@ const Chat: React.FC<ChatProps> = () => {
         variant="outlined"
       >
         <CardContent className="flex h-full  flex-col">
-          <div className="border-1 mb-4 flex-1 border border-[#262339]">
-            <Typography
-              className="m-4 text-ellipsis"
-              variant="body1"
-              color="#c7c7c7"
-            >
+          <div className="border-1 mb-4 h-[83%] flex-1 border border-[#262339]">
+            <p className="m-4  h-[95%] overflow-scroll text-[#c7c7c7]">
               {chatGPTResponse}
-            </Typography>
+            </p>
           </div>
           <ChatInput
             inputText={inputText}
