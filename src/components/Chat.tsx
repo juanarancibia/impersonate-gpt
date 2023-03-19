@@ -60,7 +60,7 @@ const Chat: React.FC<ChatProps> = () => {
       >
         <CardContent className="flex h-full  flex-col">
           <div className="border-1 mb-4 h-[83%] flex-1 border border-[#262339]">
-            <p className="m-4  h-[95%] overflow-scroll text-[#c7c7c7]">
+            <p className="m-4 h-[95%] overflow-scroll whitespace-pre-wrap text-[#c7c7c7]">
               {chatGPTResponse}
             </p>
           </div>
