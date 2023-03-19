@@ -25,7 +25,7 @@ const ChatInput: React.FC<ChatInputProps> = ({
         style: { color: "#c7c7c7" },
       }}
       id="input-outlined"
-      label="Ingresa los ingredientes"
+      label="Ingresa ingredientes separados por coma"
       value={inputText}
       onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
         setInputText(event.target.value);
